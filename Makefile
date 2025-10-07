@@ -2,6 +2,10 @@
 sync:
 	uv sync --all-extras --all-packages --group dev
 
+.PHONY: build
+build:
+	uv build
+
 .PHONY: format
 format: 
 	uv run ruff format
